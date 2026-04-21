@@ -1,0 +1,77 @@
+/* Reset (you’re missing this, it matters) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+.hero {
+  background: teal;
+  padding: 4rem 2rem;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* 👈 cleaner than margin hacks */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.profile-img {
+  width: 250px;
+}
+
+.about-card {
+  background: #eee;
+  padding: 2rem;
+  flex: 1; /* 👈 fills remaining space */
+}
+
+/* Main Content */
+.projects {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #eee;
+  padding: 1.5rem;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+  background: teal;
+  padding: 3rem 2rem;
+}
+
+.contact-text {
+  max-width: 500px;
+}
+
+.contact-img {
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .hero-content,
+  .contact {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img,
+  .contact-img {
+    width: 200px;
+  }
+}
