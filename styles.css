@@ -78,6 +78,11 @@
 }
 
 /* Main Content */
+.hack {
+  text-align: center;
+  padding: 16px;
+}
+
 .projects {
   max-width: 1000px;
   margin: 4rem auto;
