@@ -65,6 +65,18 @@
   gap: 1rem;
 }
 
+.socials img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: black;
+}
+
 /* Main Content */
 .projects {
   max-width: 1000px;
