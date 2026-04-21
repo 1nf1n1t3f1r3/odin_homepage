@@ -6,14 +6,28 @@
 
 /* HEADER */
 .hero {
-  background: teal;
+  position: relative;
   padding: 5rem 2rem;
+  overflow: hidden; /* ensures clean edges */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: teal;
+
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+  z-index: 0;
 }
 
 .hero-content {
+  position: relative;
+  z-index: 1;
+
   display: flex;
   align-items: center;
-  gap: 2rem; /* 👈 cleaner than margin hacks */
+  gap: 2rem;
   max-width: 1000px;
   margin: 0 auto;
 }
