@@ -88,9 +88,47 @@
   gap: 2rem;
 }
 
+.projects-section {
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.section-title {
+  margin-bottom: 2rem;
+}
+
 .card {
   background: #eee;
-  padding: 1.5rem;
+}
+
+.card-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card-icons i {
+  font-size: 1.1rem;
+  cursor: pointer;
 }
 
 .contact {
